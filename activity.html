@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <script src="https://use.fontawesome.com/dc32f8e790.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <title>Document</title>
   </head>
   <body>
@@ -53,7 +54,11 @@
       }
 
       i {
-        color: rgba(136, 0, 0, 0.95);
+        color: white;
+        font-size:2rem;
+      }
+      i:hover{
+          color:gold;
       }
       .icon {
         color: white;
@@ -82,18 +87,25 @@
       .col-2 p {
         font-size: 0.5rem;
       }
+      .topbar{
+          display: flex;
+      }
+      .menubar{
+        background-color: #880000;
+      }
     </style>
 
     <main>
       <div class="row justify-content-center">
-        <div class="card col-md-4">
-          <div class="row justify-content-center">
-            <div class="col-3 my-2">
+        <div class="card col-lg-4 col-md-9 col-sm-12 col-xs-12" >
+          <div class="row">
+              <div class="topbar">
+            <span class="col-3 my-5 text-center align-middle">
               <img
                 src="assets/images/profile.jpg"
-                class="img-fluid rounded-circle"
+                class="img-fluid rounded-circle w-50 align-middle "
               />
-            </div>
+            </span>
             <div class="col-9 my-5">
               <span class="input-container">
                 <i class="icon fa fa-search"></i>
@@ -102,6 +114,7 @@
                   placeholder="Search E-Turo"
                   class="input-field bg-maroon"
               /></span>
+              </div>
             </div>
           </div>
           <div class="row justify-content-center">
@@ -114,22 +127,22 @@
               <button class="btn text-center w-100">My Classes</button>
             </div>
           </div>
-          <div class="row justify-content-center">
+          <div class="row d-flex justify-content-start">
             <div class="col-3 my-2">
               <img
                 src="assets/images/prof.png"
                 class="img-fluid rounded-circle"
               />
             </div>
-            <div class="col-9 my-4">
-              <div class="row my-0">
+            <div class="col-6 col-offset-3 col-sm-9 my-4">
+              <div class="row">
                 <p class="font-weight-bold">Kim Vincent P. Alday</p>
               </div>
               <div class="row">
-                <p class="text-center w-50">PUP</p>
+                <p >PUP</p>
               </div>
               <div class="row">
-                <p class="text-center w-50">20 hrs ago</p>
+                <p >20 hrs ago</p>
               </div>
             </div>
           </div>
@@ -180,28 +193,23 @@
               </button>
             </div>
           </div>
-          <div class="row justify-content-end my-5 mx-2">
-            <div class="activity-card card border-5 col-12">
+          <div class="row justify-content-end ">
+            <div class="menubar card col-12">
               <div class="row justify-content-center text-center my-2">
                 <div class="col-2">
-                  <p>Classes</p>
-                  <img src="assets/images/classes.png" />
+                  <a href=#><i class="bi bi-easel"></i></a>
                 </div>
                 <div class="col-2">
-                  <p>Videos</p>
-                  <img src="assets/images/videos.png" />
+                  <a href=#><i class="bi bi-camera-video"></i></a>
                 </div>
                 <div class="col-2">
-                  <p>Instructor</p>
-                  <img src="assets/images/school.png" />
+                    <a href=#><i class="bi bi-person-badge"></i></a>
                 </div>
                 <div class="col-2">
-                  <p>Messages</p>
-                  <img src="assets/images/msg.png" class="my-1" />
+                    <a href=#><i class="bi bi-chat-left"></i></a>
                 </div>
                 <div class="col-2">
-                  <p>Alerts</p>
-                  <img src="assets/images/notifications.png" />
+                    <a href=#><i class="bi bi-bell"></i></a>
                 </div>
               </div>
             </div>
