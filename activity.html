@@ -17,6 +17,7 @@
     />
     <script src="https://use.fontawesome.com/dc32f8e790.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -54,7 +55,6 @@
       }
 
       i {
-        color: white;
         font-size:2rem;
       }
       i:hover{
@@ -92,6 +92,17 @@
       }
       .menubar{
         background-color: #880000;
+        color: white;
+      }
+      .add-btn{
+          color:rgba(136, 0, 0, 0.95)
+      }
+      .iconify{
+          font-size: 2rem;
+          color: white;
+      }
+      .iconify:hover{
+          color:gold;
       }
     </style>
 
@@ -117,7 +128,7 @@
               </div>
             </div>
           </div>
-          <div class="row justify-content-center">
+          <div class="row main-menu">
             <div class="col-6">
               <button class="btn btn-secondary text-center w-100">
                 Latest Activity
@@ -188,7 +199,7 @@
           </div>
           <div class="row justify-content-end my-3">
             <div class="col-3">
-              <button class="btn">
+              <button class="btn add-btn">
                 <i class="fa fa-plus-circle"></i>
               </button>
             </div>
@@ -197,19 +208,19 @@
             <div class="menubar card col-12">
               <div class="row justify-content-center text-center my-2">
                 <div class="col-2">
-                  <a href=#><i class="bi bi-easel"></i></a>
+                  <a href=#><i class="iconify" data-icon="healthicons-i-training-class" data-inline="false"></i></a>
                 </div>
                 <div class="col-2">
-                  <a href=#><i class="bi bi-camera-video"></i></a>
+                  <a href=#><i class="iconify" data-icon="ant-design:video-camera-add-outlined" data-inline="false"></i></a>
                 </div>
                 <div class="col-2">
-                    <a href=#><i class="bi bi-person-badge"></i></a>
+                    <a href=#><i class="iconify" data-icon="fluent-hat-graduation-16-regular" data-inline="false"></i></a>
                 </div>
                 <div class="col-2">
-                    <a href=#><i class="bi bi-chat-left"></i></a>
+                    <a href=#><i class="iconify" data-icon="bx-bx-message" data-inline="false"></i></a>
                 </div>
                 <div class="col-2">
-                    <a href=#><i class="bi bi-bell"></i></a>
+                    <a href=#><i class="iconify" data-icon="bx-bx-bell" data-inline="false"></i></a>
                 </div>
               </div>
             </div>
